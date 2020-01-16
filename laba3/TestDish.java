@@ -2,7 +2,7 @@ package Dish;
 
 public class TestDish {
     public static void main(String[] args) {
-        Bokal t = new Bokal("Хрусталь", "Прозрачный", "Огромный, чтобы утопить все проблемы");
+        Tarelka t = new Tarelka("Стекло", "Черное", "маленький");
         System.out.println(t);
     }
 }
