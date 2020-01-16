@@ -1,23 +1,28 @@
-package Dish;
+public class Dish {
 
-public class Bokal extends Dish {
-
-        private String razmer;
-        public String getRazmer() {
-            return razmer;
-        }
-        public void setRazmer(String razmer) {
-            this.razmer = razmer;
-        }
-        public Bokal(String material, String color, String razmer) {
-            super(material, color);
-            this.razmer = razmer;
-        }
-        @Override
-        public String toString() {
-            return "Bokal:" +
-                    "razmer=>'" + razmer + '\'' +
-                    ", material=>'" + material + '\'' +
-                    ", color=>'" + color + '\'' ;
-        }
+    protected String material;
+    protected String color;
+    public String getMaterial() {
+        return material;
     }
+    public void setMaterial(String material) {
+        this.material = material;
+    }
+    public String getColor() {
+        return color;
+    }
+    public void setColor(String color) {
+        this.color = color;
+    }
+    public Dish(String material, String color){
+        this.material = material;
+        this.color = color;
+    }
+    @Override
+    public String toString() {
+        return "Dish{" +
+                "material='" + material + '\'' +
+                ", color='" + color + '\'' +
+                '}';
+    }
+}
