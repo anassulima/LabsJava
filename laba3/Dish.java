@@ -1,5 +1,3 @@
-package Dish;
-
 public class Dish {
     protected String material;
     protected String color;
