@@ -1,5 +1,3 @@
-package car;
-
 public class Car implements Printable {
     String brand;
     String model;
@@ -46,13 +44,11 @@ public class Car implements Printable {
     @Override
     public void println() {
         System.out.println("Car{" +
-                "brand=>'" + brand + '\'' +
-                ", model=>'" + model + '\'' +
-                ", configuration=>'" + configuration + '\'' +
-                ", price=>" + price +
-                ", year=>" + year );
+                "brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                ", configuration='" + configuration + '\'' +
+                ", price=" + price +
+                ", year=" + year +
+                '}');
     }
-}
-interface Printable {
-    void println();
 }
